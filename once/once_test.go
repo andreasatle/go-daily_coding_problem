@@ -3,7 +3,7 @@ package once_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/once"
+	"github.com/andreasatle/go-daily_coding_problem/once"
 	"github.com/stretchr/testify/assert"
 )
 

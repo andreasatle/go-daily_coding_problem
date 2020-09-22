@@ -3,7 +3,7 @@ package regexp_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/regexp"
+	"github.com/andreasatle/go-daily_coding_problem/regexp"
 	"github.com/stretchr/testify/assert"
 )
 

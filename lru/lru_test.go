@@ -3,7 +3,7 @@ package lru_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/lru"
+	"github.com/andreasatle/go-daily_coding_problem/lru"
 	"github.com/stretchr/testify/assert"
 )
 

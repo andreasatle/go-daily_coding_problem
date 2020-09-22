@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/subseq"
+	"github.com/andreasatle/go-daily_coding_problem/subseq"
 	"github.com/stretchr/testify/assert"
 )
 

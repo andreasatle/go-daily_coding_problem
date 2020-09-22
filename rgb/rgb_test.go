@@ -3,7 +3,7 @@ package rgb_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/rgb"
+	"github.com/andreasatle/go-daily_coding_problem/rgb"
 	"github.com/stretchr/testify/assert"
 )
 

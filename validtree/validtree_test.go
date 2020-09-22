@@ -3,7 +3,7 @@ package validtree_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/validtree"
+	"github.com/andreasatle/go-daily_coding_problem/validtree"
 	"github.com/stretchr/testify/assert"
 )
 

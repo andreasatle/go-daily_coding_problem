@@ -3,7 +3,7 @@ package sumk_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/sumk"
+	"github.com/andreasatle/go-daily_coding_problem/sumk"
 	"github.com/stretchr/testify/assert"
 )
 

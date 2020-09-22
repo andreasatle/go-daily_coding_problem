@@ -3,7 +3,7 @@ package islands_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/islands"
+	"github.com/andreasatle/go-daily_coding_problem/islands"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,7 +3,7 @@ package inverttree_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/inverttree"
+	"github.com/andreasatle/go-daily_coding_problem/inverttree"
 	"github.com/stretchr/testify/assert"
 )
 

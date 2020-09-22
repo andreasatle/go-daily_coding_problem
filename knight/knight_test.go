@@ -3,7 +3,7 @@ package knight_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/knight"
+	"github.com/andreasatle/go-daily_coding_problem/knight"
 	"github.com/stretchr/testify/assert"
 )
 

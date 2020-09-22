@@ -3,7 +3,7 @@ package product_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/product"
+	"github.com/andreasatle/go-daily_coding_problem/product"
 	"github.com/stretchr/testify/assert"
 )
 

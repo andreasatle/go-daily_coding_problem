@@ -3,7 +3,7 @@ package missing_test
 import (
 	"testing"
 
-	"github.com/andreasatle/Assorted/Daily/missing"
+	"github.com/andreasatle/go-daily_coding_problem/missing"
 
 	"github.com/stretchr/testify/assert"
 )
