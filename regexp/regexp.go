@@ -1,5 +1,7 @@
 // Package regexp contains Daily Coding Problem #25
+//
 // This problem was asked by Facebook.
+//
 // Implement regular expression matching with the following special characters:
 // . (period) which matches any single character
 // * (asterisk) which matches zero or more of the preceding element
@@ -12,6 +14,8 @@
 // Given the regular expression ".*at" and the string "chat",
 // your function should return true. The same regular expression on
 // the string "chats" should return false.
+//
+// Author: Andreas Atle, atle.andreas@gmail.com
 package regexp
 
 // Check checks if str satisfies regular expression regexp

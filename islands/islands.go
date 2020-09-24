@@ -1,19 +1,20 @@
 // Package islands contains Daily Coding Problem #84
+//
 // This problem was asked by Amazon.
-
+//
 // Given a Matrix of 1s and 0s, return the number of "islands"
 // in the Matrix. A 1 represents land and 0 represents water,
 // so an island is a group of 1s that are neighboring whose
 // perimeter is surrounded by water.
 // For example, this Matrix has 4 islands.
-
-// 1 0 0 0 0
-// 0 0 1 1 0
-// 0 1 1 0 0
-// 0 0 0 0 0
-// 1 1 0 0 1
-// 1 1 0 0 1
-
+//  1 0 0 0 0
+//  0 0 1 1 0
+//  0 1 1 0 0
+//  0 0 0 0 0
+//  1 1 0 0 1
+//  1 1 0 0 1
+//
+// Author: Andreas Atle, atle.andreas@gmail.com
 package islands
 
 import "fmt"

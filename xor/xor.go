@@ -1,5 +1,7 @@
 // Package xor contains Daily Coding Problem #6
+//
 // This problem was asked by Google.
+//
 // An XOR linked list is a more memory efficient doubly linked list.
 // Instead of each node holding next and prev fields, it holds a field
 // named both, which is an XOR of the next node and the previous node.
@@ -8,6 +10,7 @@
 // If using a language that has no pointers (such as Python), you can
 // assume you have access to get_pointer and dereference_pointer functions
 // that converts between nodes and memory addresses.
+//
 // Note(GoLang):
 // It might be very dangerous with the xor version of a linked list,
 // since we are losing the reference to each element.
@@ -15,6 +18,8 @@
 // Maybe a better solution is to implement the linked list in C,
 // and use cgo to make is go-ish...
 // Then we would have full control!
+//
+// Author: Andreas Atle, atle.andreas@gmail.com
 package xor
 
 import (

@@ -4,17 +4,19 @@
 //
 // Invert a binary tree.
 // For example, given the following tree:
-//     a
-//    / \
-//   b   c
-//  / \  /
-// d   e f
+//      a
+//     / \
+//    b   c
+//   / \  /
+//  d   e f
 // should become:
-//   a
-//  / \
-//  c  b
-//  \  / \
-//   f e  d
+//    a
+//   / \
+//   c  b
+//   \  / \
+//    f e  d
+//
+// Author: Andreas Atle, atle.andreas@gmail.com
 package inverttree
 
 // Node contains one node in a binary tree

@@ -1,11 +1,16 @@
 // Package knight contains Daily Coding Problem #64
+//
 // This problem was asked by Google.
+//
 // A knight's tour is a sequence of moves by a knight on a chessboard
 // such that all squares are visited once.
 // Given N, write a function to return the number of knight's tours
 // on an N by N chessboard.
+//
 // Note: The board will be extended by two squares in all directions,
-//       in order to avoid checking out of board.
+// in order to avoid checking out of board.
+//
+// Author: Andreas Atle, atle.andreas@gmail.com
 package knight
 
 // Tuple contains a (row,col)-tuple

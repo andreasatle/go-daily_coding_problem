@@ -1,13 +1,18 @@
 // Package cons contains Daily Coding Problem #5
+//
 // This problem was asked by Jane Street.
+//
 // cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair. For example, car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4.
 // Given this implementation of cons:
-// def cons(a, b):
-//     def pair(f):
-//         return f(a, b)
-//     return pair
+//   def cons(a, b):
+//       def pair(f):
+//           return f(a, b)
+//       return pair
 // Implement car and cdr.
+//
 // Note: This is functional madness! What is the point?!
+//
+// Author: Andreas Atle, atle.andreas@gmail.com
 package cons
 
 // Func2 is a function Z x Z => Z

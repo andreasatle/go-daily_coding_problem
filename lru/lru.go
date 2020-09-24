@@ -1,13 +1,17 @@
 // Package lru contains Daily Coding Problem #52
+//
 // This problem was asked by Google.
+//
 // Implement an LRU (Least Recently Used) Cache.
 // It should be able to be initialized with a Cache size n,
 // and contain the following methods:
-// set(key, value): sets key to value.
-// - If there are already n items in the Cache and we are adding a new item,
-// - then it should also remove the least recently used item.
-// get(key): gets the value at key. If no such key exists, return null.
-// - Each operation should run in O(1) time.
+//  set(key, value): sets key to value.
+//  - If there are already n items in the Cache and we are adding a new item,
+//  - then it should also remove the least recently used item.
+//  get(key): gets the value at key. If no such key exists, return null.
+//  - Each operation should run in O(1) time.
+//
+// Author: Andreas Atle, atle.andreas@gmail.com
 package lru
 
 import "fmt"
