@@ -104,7 +104,7 @@ func (list *DoubleLinkedList) PalindromeSingle() bool {
 	var last *DoubleNode = nil
 	for first := list.First; ; first = first.Next {
 		for curr := first; ; curr = curr.Next {
-			if curr.Next == last {
+			if curr == nil || curr.Next == last {
 				last = curr
 				break
 			}

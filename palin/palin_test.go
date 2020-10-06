@@ -27,3 +27,9 @@ func TestPalinFalse(t *testing.T) {
 	assert.Equal(t, false, list.Palindrome())
 	assert.Equal(t, false, list.PalindromeSingle())
 }
+
+func TestPalinEmpty(t *testing.T) {
+	list := palin.NewDoubleLinkedList()
+	assert.Equal(t, true, list.Palindrome())
+	assert.Equal(t, true, list.PalindromeSingle())
+}
