@@ -35,5 +35,6 @@ All problems (except number 10) has a test-suite. Run the tests with "go test ./
 |96|allperm|Given a number in the form of a list of digits, return all possible permutations.|
 |100|minpath|You are given a sequence of points and the order in which you need to cover the points. Give the minimum number of steps in which you can achieve it. You start from the first point.|
 |101|sumprimes|Given an even number (greater than 2), return two prime numbers whose sum will be equal to the given number.|
+|102|cont|Given a list of integers and a number K, return which contiguous elements of the list sum to K.|
 |103|substr|Given a string and a set of characters, return the shortest substring containing all the characters in the set.|
 |104|palin|Determine whether a doubly linked list is a palindrome. What if it’s singly linked?|
