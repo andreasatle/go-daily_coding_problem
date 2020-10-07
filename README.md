@@ -35,6 +35,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |91|lambda|What does the below code snippet print out? How can we fix the anonymous functions to behave as we'd expect?|
 |92|prereq|We're given a hashmap associating each courseId key with a list of courseIds values, which represents that the prerequisites of courseId are courseIds. Return a sorted ordering of courses such that we can finish all courses.|
 |96|allperm|Given a number in the form of a list of digits, return all possible permutations.|
+|97|recent|Write a map implementation with a get function that lets you retrieve the value of a key at a particular time.|
 |98|letters|Given a 2D board of characters and a word, find if the word exists in the grid. The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.|
 |100|minpath|You are given a sequence of points and the order in which you need to cover the points. Give the minimum number of steps in which you can achieve it. You start from the first point.|
 |101|sumprimes|Given an even number (greater than 2), return two prime numbers whose sum will be equal to the given number.|
