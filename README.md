@@ -5,6 +5,8 @@ Some effort have been made to make the documentation look good with godoc.
 
 All problems (except number 10) has a test-suite. Run the tests with "go test ./..." in the repository root-directory.
 
+My two favorite solutions are number 2 and 40. Number 2 computes the product of all numbers in a slice, except
+for the current entry. This is trivial as long as there are no zero entries. For zero entries it becomes quite interesting. I solved the problem with a divide and conquer algorithm. Problem number 40 has a slice with triplets except for one single entry. The task is to find this single entry. I use some interesting modulo-arithmetics, that will be slow in reality, but still fulfil the complexity requirement, let be with a large constant when the entries are large.
 |Number|Package|Description|
 |-----:|:-----:|-----------|
 |1|sumk|Given a list of numbers and a number k, return whether any two numbers from the list add up to k.|
