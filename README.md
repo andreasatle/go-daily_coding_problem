@@ -30,6 +30,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |75|subseq|Given an array of numbers, find the length of the longest increasing subsequence in the array.|
 |83|inverttree|Invert a binary tree.|
 |84|islands|Given a Matrix of 1s and 0s, return the number of "islands" in the matrix.|
+|85|mathor|Given three 32-bit integers x, y, and b, return x if b is 1 and y if b is 0, using only mathematical or bit operations. You can assume b can only be 1 or 0.|
 |89|validtree|Determine whether a tree is a valid binary search tree.|
 |90|rnd|Given an integer n and a list of integers l, write a function that randomly generates a number from 0 to n-1 that isn't in l (uniform).|
 |91|lambda|What does the below code snippet print out? How can we fix the anonymous functions to behave as we'd expect?|
