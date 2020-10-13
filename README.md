@@ -44,3 +44,4 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |103|substr|Given a string and a set of characters, return the shortest substring containing all the characters in the set.|
 |104|palin|Determine whether a doubly linked list is a palindrome. What if it’s singly linked?|
 |110|leaf|Given a binary tree, return all paths from the root to leaves.|
+|111|anagram|Given a word W and a string S, find all starting indices in S which are anagrams of W.|
