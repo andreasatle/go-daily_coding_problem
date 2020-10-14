@@ -74,7 +74,7 @@ func (m Map) Set(key, value, time int) {
 
 func (m Map) Get(key, time int) (int, error) {
 	if _, ok := m[key]; !ok {
-		return 0, errors.New("Error - key not found")
+		return 0, errors.New("key not found")
 	}
 
 	cmp := func(i int) bool {
@@ -86,7 +86,7 @@ func (m Map) Get(key, time int) (int, error) {
 	}
 
 	if ind == 0 {
-		return 0, errors.New("Error - retrieving data before timestamp")
+		return 0, errors.New("retrieving data before timestamp")
 	}
 
 	return m[key][ind-1].Value, nil
