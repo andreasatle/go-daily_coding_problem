@@ -9,11 +9,20 @@ import (
 
 func TestSubStr1(t *testing.T) {
 	byteSet := substr.NewByteSet("abcd")
-	subStr, _ := byteSet.SubSet("hbgcafdhpqwrgbc")
+	subStr, ok := byteSet.SubSet("hbgcafdhpqwrgbc")
 	assert.Equal(t, "bgcafd", subStr)
+	assert.True(t, ok)
 }
 func TestSubStr2(t *testing.T) {
 	byteSet := substr.NewByteSet("aei")
-	subStr, _ := byteSet.SubSet("figehaeci")
+	subStr, ok := byteSet.SubSet("figehaeci")
 	assert.Equal(t, "aeci", subStr)
+	assert.True(t, ok)
+}
+
+func TestSubStr3(t *testing.T) {
+	byteSet := substr.NewByteSet("aqi")
+	subStr, ok := byteSet.SubSet("figehaeci")
+	assert.Equal(t, "", subStr)
+	assert.False(t, ok)
 }
