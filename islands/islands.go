@@ -17,8 +17,6 @@
 // Author: Andreas Atle, atle.andreas@gmail.com
 package islands
 
-import "fmt"
-
 // Entry is an int
 type Entry int
 
@@ -44,26 +42,6 @@ func (m *Matrix) setValue(row, col int, value Entry) {
 	m.Matrix[row*m.Cols+col] = value
 }
 
-// Row for index in Matrix
-func (m *Matrix) getRow(index int) int {
-	return index / m.Cols
-}
-
-// Column for index in Matrix
-func (m *Matrix) getCol(index int) int {
-	return index % m.Cols
-}
-
-// Print the Matrix entries
-func (m *Matrix) Print() {
-	for row := 0; row < m.Rows; row++ {
-		for col := 0; col < m.Cols; col++ {
-			fmt.Print(m.getValue(row, col))
-		}
-		fmt.Println()
-	}
-}
-
 // Clone a Matrix
 func (m *Matrix) clone() *Matrix {
 	new := &Matrix{m.Rows, m.Cols, []Entry{}}
@@ -74,46 +52,28 @@ func (m *Matrix) clone() *Matrix {
 
 // Prune the current island recursively
 func (m *Matrix) prune(row, col int) {
-	if row >= 0 && row < m.Rows && col >= 0 && col < m.Cols {
-		m.setValue(row, col, 0)
+	// Check out of bounds
+	if row < 0 || row >= m.Rows || col < 0 || col >= m.Cols {
+		return
 	}
 
-	// Keep track of boundary of matrix
-	avoidTopRow := row > 0
-	avoidBottomRow := row < m.Rows-1
-	avoidLeftCol := col > 0
-	avoidRightCol := col < m.Cols-1
-
-	if avoidTopRow {
-		if avoidLeftCol && m.getValue(row-1, col-1) == 1 {
-			m.prune(row-1, col-1)
-		}
-		if m.getValue(row-1, col) == 1 {
-			m.prune(row-1, col)
-		}
-		if avoidRightCol && m.getValue(row-1, col+1) == 1 {
-			m.prune(row-1, col+1)
-		}
+	// Check island
+	if m.getValue(row, col) == 0 {
+		return
 	}
 
-	if avoidLeftCol && m.getValue(row, col-1) == 1 {
-		m.prune(row, col-1)
-	}
-	if avoidRightCol && m.getValue(row, col+1) == 1 {
-		m.prune(row, col+1)
-	}
+	// Remove island
+	m.setValue(row, col, 0)
 
-	if avoidBottomRow {
-		if avoidLeftCol && m.getValue(row+1, col-1) == 1 {
-			m.prune(row+1, col-1)
-		}
-		if m.getValue(row+1, col) == 1 {
-			m.prune(row+1, col)
-		}
-		if avoidRightCol && m.getValue(row+1, col+1) == 1 {
-			m.prune(row+1, col+1)
-		}
-	}
+	// Prune neighbors by recursion
+	m.prune(row-1, col-1)
+	m.prune(row-1, col)
+	m.prune(row-1, col+1)
+	m.prune(row, col-1)
+	m.prune(row, col+1)
+	m.prune(row+1, col-1)
+	m.prune(row+1, col)
+	m.prune(row+1, col+1)
 }
 
 // CountIslands returns the number of isolated islands consisting of 1,
