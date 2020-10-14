@@ -53,22 +53,6 @@ func NewBoard(n int) *Board {
 	return b
 }
 
-// String returns the board configuration as a string
-func (b *Board) String() string {
-	str := []rune{}
-	for row := 0; row < b.N4; row++ {
-		for col := 0; col < b.N4; col++ {
-			if b.board[b.Pos(row, col)] {
-				str = append(str, 'T')
-			} else {
-				str = append(str, 'F')
-			}
-		}
-		str = append(str, '\n')
-	}
-	return string(str)
-}
-
 // Pos returns the position in the slice for a given (row,col)-pair
 func (b *Board) Pos(row, col int) int {
 	return row*b.N4 + col
