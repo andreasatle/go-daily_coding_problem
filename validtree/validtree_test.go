@@ -12,17 +12,21 @@ func TestTree(t *testing.T) {
 
 	// Check empty tree
 	tree = nil
-	assert.Equal(t, true, tree.Check())
+	assert.True(t, tree.Check())
 
 	// Check a valid tree
 	tree = &validtree.Node{5, &validtree.Node{3, nil, nil}, &validtree.Node{7, nil, nil}}
-	assert.Equal(t, true, tree.Check())
+	assert.True(t, tree.Check())
 
 	// Check an invalid tree
 	tree = &validtree.Node{5, &validtree.Node{6, nil, nil}, &validtree.Node{7, nil, nil}}
-	assert.Equal(t, false, tree.Check())
+	assert.False(t, tree.Check())
+
+	// Check an invalid tree
+	tree = &validtree.Node{5, &validtree.Node{3, nil, nil}, &validtree.Node{4, nil, nil}}
+	assert.False(t, tree.Check())
 
 	// Check a valid tree
 	tree = &validtree.Node{5, &validtree.Node{3, nil, &validtree.Node{4, nil, nil}}, &validtree.Node{7, &validtree.Node{6, nil, nil}, nil}}
-	assert.Equal(t, true, tree.Check())
+	assert.True(t, tree.Check())
 }
