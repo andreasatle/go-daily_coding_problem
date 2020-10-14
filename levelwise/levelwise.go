@@ -34,10 +34,6 @@ func (n *Node) Print() []Value {
 
 // print is a recursive help-function for Print
 func (n *Node) print(vals []Value) []Value {
-	if n == nil {
-		return vals
-	}
-
 	hasLeft := n.Left != nil
 	hasRight := n.Right != nil
 
