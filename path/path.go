@@ -69,14 +69,6 @@ type Graph struct {
 	E []Edge
 }
 
-// NewGraph creates a new instance of Graph
-func NewGraph(V Vertices, E []Edge) *Graph {
-	E2 := make([]Edge, len(E))
-	copy(E2, E)
-	g := &Graph{V: V, E: E2}
-	return g
-}
-
 // NewVertex creates a new graph without any edges
 func NewVertex(V Vertices) *Graph {
 	g := &Graph{V: V}
