@@ -14,8 +14,6 @@
 // Author: Andreas Atle, atle.andreas@gmail.com
 package lru
 
-import "fmt"
-
 // Key is the type of the key
 type Key string
 
@@ -60,19 +58,4 @@ func (lru *Cache) Set(key Key, value Value) {
 		lru.Queue[lru.curr] = key
 		lru.curr = (lru.curr + 1) % lru.size
 	}
-}
-
-// Print outputs Cache to stdout
-func (lru *Cache) Print() {
-	fmt.Printf("Cache-size: %d\n", lru.size)
-	fmt.Printf("Current: %d\n", lru.curr)
-	fmt.Printf("Queue: %v\n", lru.Queue)
-	fmt.Printf("Cache: ")
-	str := ""
-	for k, v := range lru.Cache {
-		fmt.Print(str + "(" + string(k) + "," + string(*v) + ")")
-		str = ", "
-	}
-	fmt.Println()
-
 }

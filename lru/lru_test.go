@@ -25,4 +25,5 @@ func TestLruCache(t *testing.T) {
 	assert.Equal(t, 3, len(lruCache.Queue), "Wrong size of queue.")
 	assert.Equal(t, 3, len(lruCache.Cache), "Wrong size of cache.")
 	assert.Equal(t, "jpg", string(*lruCache.Get("png")), "Wrong (key,value)-pair.")
+	assert.True(t, lruCache.Get("bo") == nil, "item is not in cache")
 }
