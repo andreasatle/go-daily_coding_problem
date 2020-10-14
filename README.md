@@ -3,7 +3,19 @@ Some problems from dailycodingproblem.com are solved using Golang.
 
 Some effort have been made to make the documentation look good with godoc.
 
-All problems (except number 10) has a test-suite. Run the tests with "go test ./..." in the repository root-directory.
+All problems has a test-suite. Run the tests with 
+```bash
+go test ./...
+``` 
+in the repository root-directory. It is also possible to track the test coverage by: 
+```bash
+go test ./... -cover
+```
+Even better, you can write
+```bash
+go test ./... -coverprofile=cp.out && go tool cover -html=cp.out
+```
+in order to get an html-document in the browser which code are covered by the tests.
 
 My two favorite solutions are number 2 and 40. Number 2 computes the product of all numbers in a slice, except
 for the current entry. This is trivial as long as there are no zero entries. For zero entries it becomes quite interesting. I solved the problem with a divide and conquer algorithm. Problem number 40 has a slice with triplets except for one single entry. The task is to find this single entry. I use some interesting modulo-arithmetics, that will be slow in reality, but still fulfil the complexity requirement, let be with a large constant when the entries are large.
