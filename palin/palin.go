@@ -14,8 +14,6 @@
 // Author: Andreas Atle, atle.andreas@gmail.com
 package palin
 
-import "fmt"
-
 // Value is the type of the entry in the double linked list
 type Value int
 
@@ -69,20 +67,6 @@ func (list *DoubleLinkedList) InsertLast(val Value) {
 
 	if list.First == nil {
 		list.First = node
-	}
-}
-
-// Print output the double linked list to screen
-func (list *DoubleLinkedList) Print() {
-	for curr := list.First; curr != nil; curr = curr.Next {
-		fmt.Println("Value:", curr.Val)
-	}
-}
-
-// PrintReverse output the double linked list to screen in reverse order
-func (list *DoubleLinkedList) PrintReverse() {
-	for curr := list.Last; curr != nil; curr = curr.Prev {
-		fmt.Println("Reverse Value:", curr.Val)
 	}
 }
 

@@ -20,10 +20,10 @@ func TestPalinTrue(t *testing.T) {
 
 func TestPalinFalse(t *testing.T) {
 	list := palin.NewDoubleLinkedList()
-	list.InsertLast(3)
-	list.InsertLast(4)
-	list.InsertLast(5)
-	list.InsertLast(3)
+	list.InsertFirst(3)
+	list.InsertFirst(4)
+	list.InsertFirst(5)
+	list.InsertFirst(3)
 	assert.Equal(t, false, list.Palindrome())
 	assert.Equal(t, false, list.PalindromeSingle())
 }
