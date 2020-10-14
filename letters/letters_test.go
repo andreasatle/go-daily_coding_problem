@@ -8,10 +8,19 @@ import (
 )
 
 func TestLetters(t *testing.T) {
-	board, _ := letters.NewBoard([]string{"ABCE", "SFCS", "ADEE"})
-	assert.Equal(t, true, board.PathExists("ABCCED"))
-	assert.Equal(t, true, board.PathExists("SEE"))
-	assert.Equal(t, false, board.PathExists("ABCB"))
-	assert.Equal(t, true, board.PathExists("BCCF"))
-	assert.Equal(t, false, board.PathExists("BCCFB"))
+	var board *letters.Board
+	var err error
+	board, _ = letters.NewBoard([]string{"ABCE", "SFCS", "ADEE"})
+	assert.True(t, board.PathExists("ABCCED"))
+	assert.True(t, board.PathExists("SEE"))
+	assert.False(t, board.PathExists("ABCB"))
+	assert.True(t, board.PathExists("BCCF"))
+	assert.False(t, board.PathExists("BCCFB"))
+	assert.True(t, board.PathExists(""))
+
+	_, err = letters.NewBoard([]string{})
+	assert.False(t, err == nil)
+
+	_, err = letters.NewBoard([]string{"ABCE", "FCS", "ADEE"})
+	assert.False(t, err == nil)
 }
