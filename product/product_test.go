@@ -8,7 +8,9 @@ import (
 )
 
 func TestProduct(t *testing.T) {
-	expected := 500
-	actual := product.LargestProductOfThree([]int{-10, -10, 5, 2})
-	assert.Equal(t, expected, actual, "Wrong largest product of three.")
+	assert.Equal(t, 500, product.LargestProductOfThree([]int{-10, -10, 5, 2}), "Wrong largest product of three.")
+	assert.Equal(t, 500, product.LargestProductOfThree([]int{10, 10, 5, 2}), "Wrong largest product of three.")
+	assert.Equal(t, 0, product.LargestProductOfThree([]int{-1, -2}), "Wrong largest product of three.")
+	assert.Equal(t, -6, product.LargestProductOfThree([]int{-1, -2, -4, -3}), "Wrong largest product of three.")
+
 }

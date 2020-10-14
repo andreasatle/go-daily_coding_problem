@@ -12,7 +12,6 @@
 package product
 
 import (
-	"log"
 	"sort"
 )
 
@@ -23,9 +22,9 @@ func LargestProductOfThree(u []int) int {
 	v := make([]int, n)
 	copy(v, u)
 
-	// Check that we have atleast 3 ints
+	// Check that we have atleast 3 ints, if not add zeros, gives product zero
 	if n < 3 {
-		log.Fatalf("Need atleast 3 integers, given: %v", n)
+		return 0
 	}
 
 	// Sort the slice of ints
