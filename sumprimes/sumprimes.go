@@ -20,20 +20,26 @@
 // Author: Andreas Atle, atle.andreas@gmail.com
 package sumprimes
 
+import "errors"
+
 // PrimeSum returns to primes that sum up to the argument.
 // When there are multiple solutions, the one with the smallest
 // prime number is chosen.
-func PrimeSum(n int) (int, int) {
+func PrimeSum(n int) (int, int, error) {
+	if n%2 == 1 {
+		return 0, 0, errors.New("odd input not allowed")
+	}
 	primes := getPrimesUpTo(n)
-	for first, last := 0, len(primes)-1; ; {
+	for first, last := 0, len(primes)-1; first <= last; {
 		if p1, p2 := primes[first], primes[last]; p1+p2 == n {
-			return p1, p2
+			return p1, p2, nil
 		} else if p1+p2 < n {
 			first++
 		} else {
 			last--
 		}
 	}
+	return 0, 0, errors.New("no primes found")
 }
 
 func getPrimesUpTo(n int) []int {
