@@ -19,4 +19,6 @@ func TestMinPath(t *testing.T) {
 		minpath.Point{3, 2},
 		minpath.Point{2, -7},
 	}))
+
+	assert.Equal(t, 0, minpath.MinSteps([]minpath.Point{minpath.Point{0, 0}}))
 }
