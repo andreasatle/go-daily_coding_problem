@@ -33,6 +33,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |10|Medium|schedule|Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.|
 |11|Medium|auto|Implement an autocomplete system. That is, given a query string s and a set of all possible query strings, return all strings in the set that have s as a prefix.|
 |12|Hard|stair|There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time. Given N, write a function that returns the number of unique ways you can climb the staircase.|
+|13|Hard|kdistinct|Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.|
 |17|Hard|file|Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system.|
 |25|Hard|regexp|Implement regular expression matching with the following special characters: . (period) which matches any single character * (asterisk) which matches zero or more of the preceding element.|
 |35|Hard|rgb|Given an array of strictly the characters 'R', 'G', and 'B', segregate the values of the array so that all the Rs come first, the Gs come second, and the Bs come last. You can only swap elements of the array.|
