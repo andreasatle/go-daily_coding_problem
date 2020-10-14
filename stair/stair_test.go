@@ -10,6 +10,7 @@ import (
 
 func TestStair(t *testing.T) {
 	assert.Equal(t, 5, len(stair.UniqueWays(4, []int{1, 2}, []int{}, [][]int{})))
+	assert.Equal(t, 0, len(stair.UniqueWays(-1, []int{1, 2}, []int{}, [][]int{})))
 }
 
 func Example_stair() {
