@@ -19,6 +19,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |8|unival|A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value. Given the root to a binary tree, count the number of unival subtrees.|
 |9|nonadj|Given a list of integers, write a function that returns the largest sum of non-adjacent numbers.|
 |10|schedule|Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.|
+|11|auto|Implement an autocomplete system. That is, given a query string s and a set of all possible query strings, return all strings in the set that have s as a prefix.|
 |12|stair|There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time. Given N, write a function that returns the number of unique ways you can climb the staircase.|
 |17|file|Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system.|
 |25|regexp|Implement regular expression matching with the following special characters: . (period) which matches any single character * (asterisk) which matches zero or more of the preceding element.|
