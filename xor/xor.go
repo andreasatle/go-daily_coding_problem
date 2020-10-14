@@ -57,11 +57,6 @@ func nodePtr(u UPtr) *Node {
 	return (*Node)(unsafe.Pointer(u))
 }
 
-// xor returns n xor n2
-func (n *Node) xor(n2 *Node) UPtr {
-	return n.uPtr() ^ n2.uPtr()
-}
-
 // xor returns u xor n
 func (u UPtr) xor(n *Node) UPtr {
 	return n.uPtr() ^ u
@@ -88,12 +83,6 @@ func (lst *DLinkedList) Insert(v Value) *Node {
 	lst.last.both = lst.last.both.xor(n)
 	lst.last = n
 	return n
-}
-
-// NewDLinkedList returns a new instance of a doubly linked list
-func NewDLinkedList() *DLinkedList {
-	lst := &DLinkedList{nil, nil}
-	return lst
 }
 
 // Slice makes a slice of values out of a doubly linked list
