@@ -26,4 +26,9 @@ func TestLeaf(t *testing.T) {
 	assert.Equal(t, leaf.Value(1), out[2][0])
 	assert.Equal(t, leaf.Value(3), out[2][1])
 	assert.Equal(t, leaf.Value(5), out[2][2])
+
+	// Add test with empty tree to get full test coverage
+	var tree2 *leaf.Node
+	out2 := tree2.Print()
+	assert.Equal(t, 0, len(out2))
 }
