@@ -47,27 +47,24 @@ func NewBoard(n int) *Board {
 	return b
 }
 
+// CountAllPositions counts all possible configurations on a board
+func (b *Board) CountAllPositions() int {
+	count := 0
+	for col := 0; col < b.N; col++ {
+		b2 := b.copyTo()
+		count += b.countPositionsStartingAt(0, col, 0)
+		b.copyFrom(b2)
+	}
+	return count
+}
+
 // Pos returns the position in the slice for a given (row,col)-pair
 func (b *Board) Pos(row, col int) int {
 	return row*b.N + col
 }
 
-// Row returns the (extended) row for a given position in the slice
-func (b *Board) Row(pos int) int {
-	return pos / b.N
-}
-
-// Col returns the (extended) column for a given position in the slice
-func (b *Board) Col(pos int) int {
-	return pos % b.N
-}
-
-// Prune eliminates the moves covered by a queen at (row,col)
-func (b *Board) Prune(row, col int) {
-	// Check if (row,col) is not already used
-	if _, ok := b.B[b.Pos(row, col)]; !ok {
-		return
-	}
+// prune eliminates the moves covered by a queen at (row,col)
+func (b *Board) prune(row, col int) {
 
 	// prune current row
 	for c := 0; c < b.N; c++ {
@@ -104,7 +101,7 @@ func (b *Board) countPositionsStartingAt(row, col, nQueens int) int {
 
 	// Put queen at (row,col) and prune moves
 	nQueens++
-	b.Prune(row, col)
+	b.prune(row, col)
 
 	// Check if done
 	if nQueens == b.N {
@@ -120,17 +117,6 @@ func (b *Board) countPositionsStartingAt(row, col, nQueens int) int {
 	}
 	return count
 
-}
-
-// CountAllPositions counts all possible configurations on a board
-func (b *Board) CountAllPositions() int {
-	count := 0
-	for col := 0; col < b.N; col++ {
-		b2 := b.copyTo()
-		count += b.countPositionsStartingAt(0, col, 0)
-		b.copyFrom(b2)
-	}
-	return count
 }
 
 // copyTo create a new instance of the Boardset in the Board
