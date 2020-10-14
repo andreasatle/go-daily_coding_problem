@@ -19,9 +19,7 @@ func x2(x int) int {
 }
 
 func TestSchedule(t *testing.T) {
-	//schedule.Job(func() { fmt.Println("Hello world!") }, 500)()
-	//schedule.Job(goodBye, 1000)()
-
-	//fmt.Println(schedule.JobIntToInt(x2, 1200)(5))
+	// Call function to get coverage, it's hard to test timings...
+	schedule.Job(func() {}, 200)()
 	assert.Equal(t, 25, schedule.JobIntToInt(x2, 1200)(5))
 }
