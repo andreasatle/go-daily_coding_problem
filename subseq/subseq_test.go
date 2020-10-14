@@ -16,4 +16,7 @@ func Test(t *testing.T) {
 	for i := 0; i < 5; i++ {
 		assert.Equal(t, ref[i], out[i], "Index "+strconv.Itoa(i)+" is wrong")
 	}
+
+	out2 := subseq.Subsequence([]int{}, []int{})
+	assert.Equal(t, 0, len(out2))
 }
