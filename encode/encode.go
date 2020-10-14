@@ -40,7 +40,7 @@ func Encode(msg string) (string, error) {
 
 // DecodeCount counts the possible number of decoded messages.
 func DecodeCount(enc string) int {
-	// Decoding finished, print to screen (for now)
+	// Decoding finished
 	if enc == "" {
 		return 1
 	}
