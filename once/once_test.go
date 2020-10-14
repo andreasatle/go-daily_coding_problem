@@ -18,4 +18,13 @@ func TestOnce(t *testing.T) {
 
 	slice = []int{4711}
 	assert.Equal(t, 4711, once.Find(slice))
+
+	slice = []int{}
+	assert.Equal(t, 0, once.Find(slice))
+
+	slice = []int{-7, 0, -7, -7}
+	assert.Equal(t, 0, once.Find(slice))
+
+	slice = []int{0, -3, 0, 0}
+	assert.Equal(t, -3, once.Find(slice))
 }
