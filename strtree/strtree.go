@@ -17,6 +17,7 @@
 package strtree
 
 import (
+	"errors"
 	"strings"
 )
 
@@ -36,12 +37,12 @@ func (n *Node) Serialize() string {
 }
 
 // Deserialize is a string to binary tree converter
-func Deserialize(str string) *Node {
+func Deserialize(str string) (*Node, error) {
 	if strings.HasPrefix(str, "-") {
-		return nil
+		return nil, nil
 	}
 	if !strings.HasPrefix(str, "Node(") {
-		panic("Wrong prefix")
+		return nil, errors.New("wrong prefix")
 	}
 
 	findLeftRightSplit := func(str string) int {
@@ -65,7 +66,17 @@ func Deserialize(str string) *Node {
 	split = findLeftRightSplit(stripped)
 	left := stripped[:split]
 	right := stripped[split+1:]
-	return &Node{val, Deserialize(left), Deserialize(right)}
+
+	leftDes, leftErr := Deserialize(left)
+	if leftErr != nil {
+		return nil, leftErr
+	}
+	rightDes, rightErr := Deserialize(right)
+	if rightErr != nil {
+		return nil, rightErr
+	}
+
+	return &Node{val, leftDes, rightDes}, nil
 }
 
 // Cmp returns true if n and n2 are equal.
