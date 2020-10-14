@@ -33,7 +33,3 @@ func removeElem(slice2, slice []int, index int) {
 	copy(slice2, slice[:index])
 	copy(slice2[index:], slice[index+1:])
 }
-
-//func main() {
-//	fmt.Println(Permutations([]int{1, 2, 3}))
-//}
