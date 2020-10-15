@@ -21,8 +21,8 @@ go test ./... -coverprofile=cp.out && go tool cover -html=cp.out
 ```
 in order to get an html-document in the browser which code are covered by the tests.
 
-My two favorite solutions are number 2 and 40. Number 2 computes the product of all numbers in a slice, except
-for the current entry. This is trivial as long as there are no zero entries. For zero entries it becomes quite interesting. I solved the problem with a divide and conquer algorithm. Problem number 40 has a slice with triplets except for one single entry. The task is to find this single entry. I use some interesting modulo-arithmetics, that will be slow in reality, but still fulfil the complexity requirement, let be with a large constant when the entries are large.
+My three favorite solutions are number 2, 30 and 40. Problem number 2 computes the product of all numbers in a slice, except
+for the current entry. This is trivial as long as there are no zero entries. For zero entries it becomes quite interesting. I solved the problem with a divide and conquer algorithm. Problem number 30 consider a 2D topography, and how rain water are trapped after a very heavy rainfall that fills any topography. The task is to do this in O(N) time, and O(1) space. It took a lot of thinking, but finally (several hours later) I came up with a solution. Problem number 40 has a slice with triplets except for one single entry. The task is to find this single entry. I use some interesting modulo-arithmetics, that will be slow in reality, but still fulfil the complexity requirement, let be with a large constant when the entries are large.
 |Number|Level|Package|Description|
 |-----:|:---:|:-----:|-----------|
 |1|Easy|sumk|Given a list of numbers and a number k, return whether any two numbers from the list add up to k.|
@@ -42,6 +42,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |17|Hard|file|Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system.|
 |21|Easy|rooms|Given an array of time intervals (start, end) for classroom lectures  (possibly overlapping), find the minimum number of rooms required.|
 |25|Hard|regexp|Implement regular expression matching with the following special characters: . (period) which matches any single character * (asterisk) which matches zero or more of the preceding element.|
+|30|Medium|rain|You are given an array of non-negative integers that represents a two-dimensional elevation map where each element is unit-width wall and the integer is the height. Suppose it will rain and all spots between two walls get filled up. Compute how many units of water remain trapped on the map.|
 |35|Hard|rgb|Given an array of strictly the characters 'R', 'G', and 'B', segregate the values of the array so that all the Rs come first, the Gs come second, and the Bs come last. You can only swap elements of the array.|
 |38|Hard|queen|You have an N by N board. Write a function that, given N, returns the number of possible arrangements of the board where N queens can be placed on the board without threatening each other, i.e. no two queens share the same row, column, or diagonal.|
 |40|Hard|once|Given an array of integers where every integer occurs three times except for one integer, which only occurs once, find and return the non-duplicated integer.|
