@@ -71,3 +71,4 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |109|Medium|bitswap|Given an unsigned 8-bit integer, swap its even and odd bits.|
 |110|Medium|leaf|Given a binary tree, return all paths from the root to leaves.|
 |111|Hard|anagram|Given a word W and a string S, find all starting indices in S which are anagrams of W.|
+|113|Medium|reverse|Given a string of words delimited by spaces, reverse the words in string.|
