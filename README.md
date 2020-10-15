@@ -36,6 +36,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |13|Hard|kdistinct|Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.|
 |14|Medium|pi|Estimate π to 3 decimal places using a Monte Carlo method.|
 |17|Hard|file|Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system.|
+|21|Easy|rooms|Given an array of time intervals (start, end) for classroom lectures  (possibly overlapping), find the minimum number of rooms required.|
 |25|Hard|regexp|Implement regular expression matching with the following special characters: . (period) which matches any single character * (asterisk) which matches zero or more of the preceding element.|
 |35|Hard|rgb|Given an array of strictly the characters 'R', 'G', and 'B', segregate the values of the array so that all the Rs come first, the Gs come second, and the Bs come last. You can only swap elements of the array.|
 |38|Hard|queen|You have an N by N board. Write a function that, given N, returns the number of possible arrangements of the board where N queens can be placed on the board without threatening each other, i.e. no two queens share the same row, column, or diagonal.|
