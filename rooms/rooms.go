@@ -10,11 +10,13 @@
 // Author: Andreas Atle, atle.andreas@gmail.com
 package rooms
 
+// Interval contains the start and end time for a class
 type Interval struct {
 	Start int
 	End   int
 }
 
+// Intervals is a slice of start and end times
 type Intervals []Interval
 
 type tuple struct {
