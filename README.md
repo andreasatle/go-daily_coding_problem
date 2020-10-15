@@ -1,7 +1,11 @@
 # go-daily_coding_problem
 Some problems from dailycodingproblem.com are solved using Golang.
 
-Some effort have been made to make the documentation look good with godoc.
+Some effort have been made to make the documentation look good with godoc. To see the documentation, run
+```bash
+godoc -http=:3000
+```
+and use a browser to view at localhost:3000.
 
 All problems has a test-suite. Run the tests with 
 ```bash
