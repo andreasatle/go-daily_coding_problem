@@ -49,6 +49,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |40|Hard|once|Given an array of integers where every integer occurs three times except for one integer, which only occurs once, find and return the non-duplicated integer.|
 |52|Hard|lru|Implement an LRU (Least Recently Used) Cache.|
 |64|Hard|knight|Given N, write a function to return the number of knight's tours on an N by N chessboard.|
+|65|Easy|spiral|Given a N by M matrix of numbers, print out the matrix in a clockwise spiral.|
 |69|Easy|product|Given a list of integers, return the largest product that can be made by multiplying any three integers.|
 |72|Hard|path|Given a graph with n nodes and m directed edges, return the largest value path of the graph. If the largest value is infinite, then return null.|
 |75|Hard|subseq|Given an array of numbers, find the length of the longest increasing subsequence in the array.|
