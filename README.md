@@ -43,6 +43,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |21|Easy|rooms|Given an array of time intervals (start, end) for classroom lectures  (possibly overlapping), find the minimum number of rooms required.|
 |25|Hard|regexp|Implement regular expression matching with the following special characters: . (period) which matches any single character * (asterisk) which matches zero or more of the preceding element.|
 |30|Medium|rain|You are given an array of non-negative integers that represents a two-dimensional elevation map where each element is unit-width wall and the integer is the height. Suppose it will rain and all spots between two walls get filled up. Compute how many units of water remain trapped on the map.|
+|33|Easy|runmed|Compute the running median of a sequence of numbers.|
 |35|Hard|rgb|Given an array of strictly the characters 'R', 'G', and 'B', segregate the values of the array so that all the Rs come first, the Gs come second, and the Bs come last. You can only swap elements of the array.|
 |38|Hard|queen|You have an N by N board. Write a function that, given N, returns the number of possible arrangements of the board where N queens can be placed on the board without threatening each other, i.e. no two queens share the same row, column, or diagonal.|
 |40|Hard|once|Given an array of integers where every integer occurs three times except for one integer, which only occurs once, find and return the non-duplicated integer.|
