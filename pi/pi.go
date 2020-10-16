@@ -34,6 +34,10 @@ func Approx() float64 {
 	return approx(0.0005, 100000000)
 }
 
+func ApproxBatch(batchSize int) float64 {
+	return approx(0.0005, batchSize)
+}
+
 func approx(prec float64, batchSize int) float64 {
 	rnd := rand.New(rand.NewSource(time.Now().UnixNano()))
 
