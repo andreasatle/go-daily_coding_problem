@@ -57,6 +57,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |83|Medium|inverttree|Invert a binary tree.|
 |84|Medium|islands|Given a Matrix of 1s and 0s, return the number of "islands" in the matrix.|
 |85|Medium|mathor|Given three 32-bit integers x, y, and b, return x if b is 1 and y if b is 0, using only mathematical or bit operations. You can assume b can only be 1 or 0.|
+|86|Medium|parant|Given a string of parentheses, write a function to compute the minimum number of parentheses to be removed to make the string valid.|
 |89|Medium|validtree|Determine whether a tree is a valid binary search tree.|
 |90|Medium|rnd|Given an integer n and a list of integers l, write a function that randomly generates a number from 0 to n-1 that isn't in l (uniform).|
 |91|Easy|lambda|What does the below code snippet print out? How can we fix the anonymous functions to behave as we'd expect?|
