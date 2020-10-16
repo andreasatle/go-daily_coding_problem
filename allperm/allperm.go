@@ -11,6 +11,7 @@
 // Author: Andreas Atle, atle.andreas@gmail.com
 package allperm
 
+// Permutations returns all permutations of an integer slice.
 func Permutations(vals []int) [][]int {
 	return allPerms(vals, []int{}, [][]int{})
 }
@@ -19,7 +20,6 @@ func allPerms(vals []int, perm []int, perms [][]int) [][]int {
 	if len(vals) == 0 {
 		return append(perms, perm)
 	}
-	//output := [][]int{}
 	vals2 := make([]int, len(vals)-1)
 
 	for i, val := range vals {
