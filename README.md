@@ -49,6 +49,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |38|Hard|queen|You have an N by N board. Write a function that, given N, returns the number of possible arrangements of the board where N queens can be placed on the board without threatening each other, i.e. no two queens share the same row, column, or diagonal.|
 |40|Hard|once|Given an array of integers where every integer occurs three times except for one integer, which only occurs once, find and return the non-duplicated integer.|
 |52|Hard|lru|Implement an LRU (Least Recently Used) Cache.|
+|60|Medium|partition|Given a multiset of integers, return whether it can be partitioned into two subsets whose sums are the same.|
 |64|Hard|knight|Given N, write a function to return the number of knight's tours on an N by N chessboard.|
 |65|Easy|spiral|Given a N by M matrix of numbers, print out the matrix in a clockwise spiral.|
 |69|Easy|product|Given a list of integers, return the largest product that can be made by multiplying any three integers.|
