@@ -54,6 +54,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |69|Easy|product|Given a list of integers, return the largest product that can be made by multiplying any three integers.|
 |72|Hard|path|Given a graph with n nodes and m directed edges, return the largest value path of the graph. If the largest value is infinite, then return null.|
 |75|Hard|subseq|Given an array of numbers, find the length of the longest increasing subsequence in the array.|
+|81|Easy|phone|Given a mapping of digits to letters (as in a phone number), and a digit string, return all possible letters the number could represent.|
 |83|Medium|inverttree|Invert a binary tree.|
 |84|Medium|islands|Given a Matrix of 1s and 0s, return the number of "islands" in the matrix.|
 |85|Medium|mathor|Given three 32-bit integers x, y, and b, return x if b is 1 and y if b is 0, using only mathematical or bit operations. You can assume b can only be 1 or 0.|
