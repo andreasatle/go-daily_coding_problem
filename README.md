@@ -56,6 +56,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |72|Hard|path|Given a graph with n nodes and m directed edges, return the largest value path of the graph. If the largest value is infinite, then return null.|
 |75|Hard|subseq|Given an array of numbers, find the length of the longest increasing subsequence in the array.|
 |76|Medium|lex|You are given an N by M 2D matrix of lowercase letters. Determine the minimum number of columns that can be removed to ensure that each row is ordered from top to bottom lexicographically.|
+|78|Medium|linkedsort|Given k sorted singly linked lists, write a function to merge all the lists into one sorted singly linked list.|
 |81|Easy|phone|Given a mapping of digits to letters (as in a phone number), and a digit string, return all possible letters the number could represent.|
 |83|Medium|inverttree|Invert a binary tree.|
 |84|Medium|islands|Given a Matrix of 1s and 0s, return the number of "islands" in the matrix.|
