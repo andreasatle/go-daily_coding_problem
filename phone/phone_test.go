@@ -1,7 +1,6 @@
 package phone_test
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/andreasatle/go-daily_coding_problem/phone"
@@ -10,7 +9,6 @@ import (
 
 func TestPhoneCase1(t *testing.T) {
 	strs := phone.Encode("23")
-	fmt.Println(strs)
 	assert.Equal(t, 9, len(strs))
 	assert.Equal(t, "ad", strs[0])
 	assert.Equal(t, "ae", strs[1])
@@ -30,4 +28,9 @@ func TestPhoneCase2(t *testing.T) {
 	assert.Equal(t, "(tda)gtt-wt1e", strs[1])
 	assert.Equal(t, "(tda)gtt-wt1f", strs[2])
 	assert.Equal(t, "(tda)gtt-wu1d", strs[3])
+}
+
+func TestPhoneCase3(t *testing.T) {
+	strs := phone.Encode("")
+	assert.Equal(t, 0, len(strs))
 }
