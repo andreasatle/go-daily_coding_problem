@@ -48,6 +48,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |35|Hard|rgb|Given an array of strictly the characters 'R', 'G', and 'B', segregate the values of the array so that all the Rs come first, the Gs come second, and the Bs come last. You can only swap elements of the array.|
 |38|Hard|queen|You have an N by N board. Write a function that, given N, returns the number of possible arrangements of the board where N queens can be placed on the board without threatening each other, i.e. no two queens share the same row, column, or diagonal.|
 |40|Hard|once|Given an array of integers where every integer occurs three times except for one integer, which only occurs once, find and return the non-duplicated integer.|
+|51|Medium|cards|Given a function that generates perfectly random numbers between 1 and k (inclusive), where k is an input, write a function that shuffles a deck of cards represented as an array using only swaps.|
 |52|Hard|lru|Implement an LRU (Least Recently Used) Cache.|
 |60|Medium|partition|Given a multiset of integers, return whether it can be partitioned into two subsets whose sums are the same.|
 |64|Hard|knight|Given N, write a function to return the number of knight's tours on an N by N chessboard.|
