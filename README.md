@@ -42,6 +42,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |17|Hard|file|Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system.|
 |21|Easy|rooms|Given an array of time intervals (start, end) for classroom lectures  (possibly overlapping), find the minimum number of rooms required.|
 |25|Hard|regexp|Implement regular expression matching with the following special characters: . (period) which matches any single character * (asterisk) which matches zero or more of the preceding element.|
+|26|Medium|kthlast|Given a singly linked list and an integer k, remove the kth last element from the list.|
 |30|Medium|rain|You are given an array of non-negative integers that represents a two-dimensional elevation map where each element is unit-width wall and the integer is the height. Suppose it will rain and all spots between two walls get filled up. Compute how many units of water remain trapped on the map.|
 |31|Easy|edit|Given two strings, compute the edit distance between them.|
 |33|Easy|runmed|Compute the running median of a sequence of numbers.|
