@@ -9,6 +9,7 @@ package levelsum
 
 import "errors"
 
+// Node contains one node in a binary tree with integers.
 type Node struct {
 	Value int
 	Left  *Node
@@ -54,6 +55,7 @@ func (n *Node) depth(level int) int {
 	return max(n.Left.depth(level), n.Right.depth(level))
 }
 
+// max returns the max of the two integer arguments.
 func max(a, b int) int {
 	if a >= b {
 		return a

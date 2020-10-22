@@ -62,3 +62,19 @@ func TestLevelsumCase4(t *testing.T) {
 	_, err := tree.LevelOfMinSum()
 	assert.Equal(t, errors.New("empty tree"), err, "tree should be empty")
 }
+
+func TestLevelsumCase5(t *testing.T) {
+	// Root gives smallest sum
+	tree := &levelsum.Node{25,
+		&levelsum.Node{15,
+			nil,
+			&levelsum.Node{8, nil, nil},
+		},
+		&levelsum.Node{11,
+			&levelsum.Node{8, nil, nil},
+			&levelsum.Node{9, nil, nil},
+		},
+	}
+	maxLevel, _ := tree.LevelOfMinSum()
+	assert.Equal(t, 0, maxLevel, "root should give smallest sum")
+}
