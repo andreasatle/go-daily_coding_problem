@@ -87,3 +87,4 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |115|Hard|subtree|Given two non-empty binary trees s and t, check whether tree t has exactly the same structure and node values with a subtree of s.|
 |117|Easy|levelsum|Given a binary tree, return the level of the tree with minimum sum.|
 |119|Medium|setpts|Given a set of closed intervals, find the smallest set of numbers that covers all the intervals.|
+|120|Medium|singleton|Implement the singleton pattern with a twist. First, instead of storing one instance, store two instances. And in every even call of getInstance(), return the first instance and in every odd call of getInstance(), return the second instance.|
