@@ -21,8 +21,8 @@ go test ./... -coverprofile=cp.out && go tool cover -html=cp.out
 ```
 in order to get an html-document in the browser which code are covered by the tests.
 
-My three favorite solutions are number 2, 30 and 40. Problem number 2 computes the product of all numbers in a slice, except
-for the current entry. This is trivial as long as there are no zero entries. For zero entries it becomes quite interesting. I solved the problem with a divide and conquer algorithm. Problem number 30 consider a 2D topography, and how rain water are trapped after a very heavy rainfall that fills any topography. The task is to do this in O(N) time, and O(1) space. It took a lot of thinking, but finally (several hours later) I came up with a solution. Problem number 40 has a slice with triplets except for one single entry. The task is to find this single entry. I use some interesting modulo-arithmetics, that will be slow in reality, but still fulfil the complexity requirement, let be with a large constant when the entries are large.
+My three favorite solutions are number 2, 30 and 40. Problem number 2 computes the product of all numbers in a slice, except for the current entry. This is trivial as long as there are no zero entries. For zero entries it becomes quite interesting. I solved the problem with a divide and conquer algorithm. Problem number 30 consider a 2D topography, and how rain water are trapped after a very heavy rainfall that fills any topography. The task is to do this in O(N) time, and O(1) space. It took a lot of thinking, but finally (several hours later) I came up with a solution. Problem number 40 has a slice with triplets except for one single entry. The task is to find this single entry. I use some interesting modulo-arithmetics, that will be slow in reality, but still fulfil the complexity requirement, let be with a large constant when the entries are large.
+
 |Number|Level|Package|Description|
 |-----:|:---:|:-----:|-----------|
 |1|Easy|sumk|Given a list of numbers and a number k, return whether any two numbers from the list add up to k.|
@@ -54,6 +54,7 @@ for the current entry. This is trivial as long as there are no zero entries. For
 |51|Medium|cards|Given a function that generates perfectly random numbers between 1 and k (inclusive), where k is an input, write a function that shuffles a deck of cards represented as an array using only swaps.|
 |52|Hard|lru|Implement an LRU (Least Recently Used) Cache.|
 |60|Medium|partition|Given a multiset of integers, return whether it can be partitioned into two subsets whose sums are the same.|
+|62|Medium|corner|Given N and M, write a function to count the number of ways of starting at the top-left corner and getting to the bottom-right corner. You can only move right or down.|
 |64|Hard|knight|Given N, write a function to return the number of knight's tours on an N by N chessboard.|
 |65|Easy|spiral|Given a N by M matrix of numbers, print out the matrix in a clockwise spiral.|
 |69|Easy|product|Given a list of integers, return the largest product that can be made by multiplying any three integers.|
