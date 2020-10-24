@@ -91,3 +91,4 @@ My three favorite solutions are number 2, 30 and 40. Problem number 2 computes t
 |118|Easy|negsort|Given a sorted list of integers, square the elements and give the output in sorted order.|
 |119|Medium|setpts|Given a set of closed intervals, find the smallest set of numbers that covers all the intervals.|
 |120|Medium|singleton|Implement the singleton pattern with a twist. First, instead of storing one instance, store two instances. And in every even call of getInstance(), return the first instance and in every odd call of getInstance(), return the second instance.|
+|121|Hard|delpal|Given a string which we can delete at most k, return whether you can make a palindrome.|
