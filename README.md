@@ -92,3 +92,4 @@ My three favorite solutions are number 2, 30 and 40. Problem number 2 computes t
 |119|Medium|setpts|Given a set of closed intervals, find the smallest set of numbers that covers all the intervals.|
 |120|Medium|singleton|Implement the singleton pattern with a twist. First, instead of storing one instance, store two instances. And in every even call of getInstance(), return the first instance and in every odd call of getInstance(), return the second instance.|
 |121|Hard|delpal|Given a string which we can delete at most k, return whether you can make a palindrome.|
+|122|Medium|coins|You are given a 2-d matrix where each cell represents number of coins in that cell. Assuming we start at matrix[0][0], and can only move right or down, find the maximum number of coins you can collect by the bottom right corner.|
