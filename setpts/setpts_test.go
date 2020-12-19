@@ -1,18 +1,17 @@
-package setpts_test
+package setpts
 
 import (
 	"testing"
 
-	"github.com/andreasatle/go-daily_coding_problem/setpts"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestSetpts(t *testing.T) {
-	iVals := setpts.Intervals{
-		setpts.Interval{0, 3},
-		setpts.Interval{2, 6},
-		setpts.Interval{3, 4},
-		setpts.Interval{6, 9},
+	iVals := Intervals{
+		Interval{0, 3},
+		Interval{2, 6},
+		Interval{3, 4},
+		Interval{6, 9},
 	}
 	points := iVals.FindPoints()
 	assert.Equal(t, 2, len(points))
